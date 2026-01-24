@@ -1,0 +1,75 @@
+.contact-form {
+    max-width: 400px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #111;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #333;
+}
+
+/* BOTÓN VOLVER */
+/* BOTÓN VOLVER (CORREGIDO) */
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    border: 1px solid #3ce4e4;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #000000 !important;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.navbar {
+    background-color: #ffffff;
+}
+
+
+.btn-back .arrow {
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+    color: inherit;
+}
+
+.btn-back:hover {
+    background-color: rgb(48, 156, 151);
+    color: #7c7c7c;
+}
+
+.btn-back:hover .arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.btn-back:focus {
+    outline: none;
+}
+
+
+.section h2 {
+    margin-top: 40px;
+}
