@@ -1,0 +1,114 @@
+/* PÁGINA SOBRE MÍ */
+.about-page {
+    min-height: 100vh;
+    background-image: url("../IMG/fondoinico.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 140px;
+    padding-bottom: 80px;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #111;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+/* CARD BIO */
+.about-card {
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(14px);
+
+    padding: 60px 50px;
+    border-radius: 24px;
+
+    max-width: 650px;
+    width: 90%;
+
+    text-align: center;
+    color: white;
+}
+
+
+/* FOTO */
+.about-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #00bcd4;
+}
+
+/* BOTÓN VOLVER */
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    border: 1px solid #3ce4e4;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #ffffff !important;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-back .arrow {
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+    color: inherit;
+}
+
+.btn-back:hover {
+    background-color: rgb(48, 156, 151);
+    color: #7c7c7c;
+}
+
+.btn-back:hover .arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.btn-back:focus {
+    outline: none;
+}
